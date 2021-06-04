@@ -1,0 +1,49 @@
+@import 'abstracts';
+
+//Home Container
+.big {
+  display: flex;
+  justify-content: center;
+  .container-home {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+
+    .left {
+      height: 500px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      position: sticky;
+      top: 150px;
+      .responsive {
+        display: none;
+      }
+    }
+    .right {
+      position: sticky;
+      top: 150px;
+      height: 500px;
+    }
+    @media only screen and (max-width: 1240px) {
+      .right {
+        display: none;
+      }
+      .middle {
+        margin: 0 -50px;
+        margin-left: 50px;
+        width: 650px;
+      }
+      .left {
+        margin-top: -50px;
+        top: 100px;
+        height: 700px;
+        .responsive {
+          display: block;
+        }
+      }
+    }
+  }
+}

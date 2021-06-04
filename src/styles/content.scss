@@ -1,0 +1,80 @@
+@import 'abstracts';
+.container-content {
+  width: 800px;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1240px) {
+  .container-content .card {
+    width: 600px !important;
+  }
+  .container-content {
+    width: 650px !important;
+  }
+}
+.container-content,
+.container-profile-content {
+  .card {
+    font-family: 'Poppins', sans-serif;
+    width: 650px;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 0px 10px 20px lighten($primary-color, 20%);
+    }
+    h1 {
+      margin-top: 10px;
+      width: 90%;
+      margin-left: 5%;
+      height: 40px;
+      font-size: 24px;
+      line-height: 40px;
+      text-align: left;
+    }
+    .card-content {
+      width: 90%;
+      height: 80px;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        font-size: 24px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+    }
+    .tags {
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-info {
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      text-align: center;
+      width: 300px;
+      h4 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        line-height: 100%;
+      }
+    }
+  }
+}

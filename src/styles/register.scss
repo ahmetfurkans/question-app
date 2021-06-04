@@ -1,0 +1,110 @@
+@import 'abstracts';
+
+//Register
+
+.container-form {
+  margin-top: 50px;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  .title {
+    height: 80px;
+    text-align: center;
+    span {
+      color: $primary-color;
+      font-weight: normal;
+    }
+    h2 {
+      font-weight: bold;
+    }
+    h4 {
+      letter-spacing: 0.5px;
+      font-weight: 300;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .link_box {
+    width: 430px;
+    height: 45px;
+    background-color: #fffefe;
+    border-radius: 20px !important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #000 !important;
+    transition: all 0.5s;
+    font-size: 1rem !important ;
+    font-weight: 400 !important;
+    font-family: $primary-font;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+    h3 {
+      margin: 10px;
+      line-height: 100%;
+      i {
+        margin: 10px;
+      }
+    }
+  }
+}
+//İnput
+.input {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inputbox {
+    transition: linear 0.5s;
+    width: 430px;
+    height: 45px;
+    background-color: #fffefe;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    font-family: $secondary-font;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 10px 20px $primary-color;
+    }
+  }
+  .button {
+    border: none;
+    line-height: 40px;
+    text-align: center;
+    background-color: $primary-color;
+    color: #fff;
+    width: 430px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: linear 0.2s;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.register-style {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  content: '';
+  width: 130px;
+  margin: 5px;
+  height: 1px;
+  background: black; /* Remove, just showing empty line */
+}
